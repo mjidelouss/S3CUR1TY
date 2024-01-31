@@ -1,0 +1,10 @@
+name: taskflow
+services:
+  mysql:
+    container_name: mysql
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=security'
+      - 'MYSQL_ALLOW_EMPTY_PASSWORD=yes'
+    ports:
+      - '3306:3306'
