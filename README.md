@@ -13,15 +13,5 @@ A sample project to practice Security in Spring Boot by implementing OAuth2 logi
 - Update the application.yml file
 After creating a new application, you will a client ID and a client secret. Copy this two information and paste the in the application.yml file
 The same basics are used for Google.
-- Application.yml
-
-spring:
-  security:
-     oauth2:
-       client:
-         registration:
-             github:
-                clientId: github-app-client-id-here
-                clientSecret: github-app-client-secret-here
 
 # Start the application and enjoy (-_-)
