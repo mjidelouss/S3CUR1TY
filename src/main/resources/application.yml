@@ -1,18 +1,12 @@
-token:
-  signing:
-    key: 413F4428472B4B6250655368566D5970337336763979244226452948404D6351
-
 spring:
-  liquibase:
-    enabled: 'true'
-    change-log: db/master.yml
-  docker:
-    compose:
-      enabled: 'true'
-      file: src/main/docker/compose.yml
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: Iv1.33f916bf11fa15cc
+            clientSecret: 4034d433924e3a83c660ed1e6d3e2c4f77572ba3
+          google:
+            clientId: 82356675402-ts46qj94fb7fqf7iheqrl68i4h4967ke.apps.googleusercontent.com
+            clientSecret: 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
 
-  datasource:
-    url: jdbc:mysql://localhost:3306/security
-    username: root
-    password:
-    driver-class-name: com.mysql.cj.jdbc.Driver
