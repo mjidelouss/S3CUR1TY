@@ -1,4 +1,4 @@
-package com.alibou.oauth2.social.security;
+package com.example.s3cur1tydemo.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -10,17 +10,17 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableWebSecurity
 public class SecurityConfig {
 
-  @Bean
-  public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-    http
-        .csrf()
-        .disable()
-        .authorizeHttpRequests()
-        .anyRequest()
-        .authenticated()
-        .and()
-        .oauth2Login()
-    ;
-    return http.build();
-  }
+    @Bean
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        http
+                .csrf()
+                .disable()
+                .authorizeHttpRequests()
+                .anyRequest()
+                .authenticated()
+                .and()
+                .oauth2Login()
+        ;
+        return http.build();
+    }
 }

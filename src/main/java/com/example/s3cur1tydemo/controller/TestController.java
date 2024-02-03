@@ -1,4 +1,4 @@
-package com.alibou.oauth2.social.demo;
+package com.example.s3cur1tydemo.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/v1/demo")
-public class DemoController {
+@RequestMapping("/api/v1/test")
+public class TestController {
 
-  @GetMapping
-  public ResponseEntity<String> sayHello() {
-    return ResponseEntity.ok("Hell OAuth2");
-  }
+    @GetMapping
+    public ResponseEntity<String> sayHello() {
+        return ResponseEntity.ok("Logged In Successfully");
+    }
 }

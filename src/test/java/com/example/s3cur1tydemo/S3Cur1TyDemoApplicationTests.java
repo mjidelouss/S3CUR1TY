@@ -1,13 +1,13 @@
-package com.alibou.oauth2.social;
+package com.example.s3cur1tydemo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SocialApplicationTests {
+class S3Cur1TyDemoApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }
